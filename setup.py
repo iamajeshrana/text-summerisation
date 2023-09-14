@@ -11,7 +11,7 @@ __version__ = "0.0.0"
 
 REPO_NAME = "text-summerisation" # This name gives as per given the project repo name in github
 AUTHOR_USER_NAME = "iamajeshrana"
-SRC_REPO = "texxtsum" # this names gives as per the mention the src/mlproject name
+SRC_REPO = "textsum" # this names gives as per the mention the src/mlproject name
 AUTHOR_EMAIL = "iamajeshrana4u@gmail.com"
 
 
