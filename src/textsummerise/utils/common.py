@@ -1,15 +1,15 @@
 import os
 from box.exceptions import BoxValueError
 import yaml
-from textsummerise.logging import logger 
+from textsummerise.logging import logger
 from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
 from typing import Any
 
 
+
 @ensure_annotations
-# this project many yaml file created so i want to read that so use this.
 def read_yaml(path_to_yaml: Path) -> ConfigBox:
     """reads yaml file and returns
 
@@ -34,8 +34,8 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
         raise e
     
 
+
 @ensure_annotations
-# why used this because create a directory artifacts folder or other folder also
 def create_directories(path_to_directories: list, verbose=True):
     """create list of directories
 
@@ -49,8 +49,8 @@ def create_directories(path_to_directories: list, verbose=True):
             logger.info(f"created directory at: {path}")
 
 
+
 @ensure_annotations
-# It can return the size of the file 
 def get_size(path: Path) -> str:
     """get size in KB
 
@@ -62,3 +62,5 @@ def get_size(path: Path) -> str:
     """
     size_in_kb = round(os.path.getsize(path)/1024)
     return f"~ {size_in_kb} KB"
+
+    

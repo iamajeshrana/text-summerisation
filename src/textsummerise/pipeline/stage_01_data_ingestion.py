@@ -1,5 +1,5 @@
 from textsummerise.config.configuration import ConfigurationManager
-from textsummerise.components.data_ingestion import DataIngestion
+from textsummerise.conponents.data_ingestion import DataIngestion
 from textsummerise.logging import logger
 
 
